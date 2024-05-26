@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/LapMart/static/css/main.a12bce10.css",
-    "main.js": "/LapMart/static/js/main.37013381.js",
+    "main.js": "/LapMart/static/js/main.052e7f22.js",
     "static/media/sasha.jpg": "/LapMart/static/media/sasha.4e873963042bf3e0abbb.jpg",
     "static/media/tony.jpg": "/LapMart/static/media/tony.9a23d476c73fd71cfd48.jpg",
     "static/media/banner-laptop.png": "/LapMart/static/media/banner-laptop.aee4994742ac703fce44.png",
@@ -16,10 +16,10 @@
     "static/media/playstore.png": "/LapMart/static/media/playstore.1be3feade6ae12c67801.png",
     "index.html": "/LapMart/index.html",
     "main.a12bce10.css.map": "/LapMart/static/css/main.a12bce10.css.map",
-    "main.37013381.js.map": "/LapMart/static/js/main.37013381.js.map"
+    "main.052e7f22.js.map": "/LapMart/static/js/main.052e7f22.js.map"
   },
   "entrypoints": [
     "static/css/main.a12bce10.css",
-    "static/js/main.37013381.js"
+    "static/js/main.052e7f22.js"
   ]
 }
