@@ -8,6 +8,8 @@ const Hero = ({ theme }) => {
     AOS.refresh();
   });
   return (
+    <>
+    <span id="home"></span>
     <div className="dark:bg-black dark:text-white duration-300 ">
       <div className="container min-h-[620px] flex">
         <div className="grid grid-cols-1 sm:grid-cols-2 place-items-center">
@@ -49,6 +51,7 @@ const Hero = ({ theme }) => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

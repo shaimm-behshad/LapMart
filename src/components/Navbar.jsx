@@ -7,34 +7,42 @@ export const Navlinks = [
   {
     id: 1,
     name: "HOME",
-    link: "",
+    link: "home",
   },
   {
     id: 2,
     name: "LAPTOPS",
-    link: "",
+    link: "laptops",
   },
   {
     id: 3,
     name: "ABOUT",
-    link: "",
+    link: "about",
   },
   {
     id: 4,
     name: "SHOP",
-    link: "",
+    link: "laptops",
   },
 ];
+
 const Navbar = ({ theme, setTheme }) => {
   const [showMenu, setShowMenu] = useState(false);
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
+
+  const handleScroll = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div
-      className="relative z-10 shadow-md w-full dark:bg-black dark:text-white duration-300
-    "
+      className="relative z-10 shadow-md w-full dark:bg-black dark:text-white duration-300"
     >
       <div className="container py-2 md:py-0">
         <div className="flex justify-between items-center">
@@ -45,11 +53,12 @@ const Navbar = ({ theme, setTheme }) => {
             <ul className="flex items-center gap-8">
               {Navlinks.map(({ id, name, link }) => (
                 <li key={id} className="py-4">
-                  <a
-                    className=" text-lg font-medium  hover:text-primary py-2 hover:border-b-2 hover:border-primary transition-colors duration-500 cursor-pointer"
+                  <span
+                    onClick={() => handleScroll(link)}
+                    className="text-lg font-medium hover:text-primary py-2 hover:border-b-2 hover:border-primary transition-colors duration-500 cursor-pointer"
                   >
                     {name}
-                  </a>
+                  </span>
                 </li>
               ))}
               {/* DarkMode feature implement */}
@@ -66,9 +75,9 @@ const Navbar = ({ theme, setTheme }) => {
               )}
             </ul>
           </nav>
-          {/* Mobile view  */}
-          <div className="flex items-center gap-4 md:hidden ">
-            {/* dark  mode */}
+          {/* Mobile view */}
+          <div className="flex items-center gap-4 md:hidden">
+            {/* dark mode */}
             {theme === "dark" ? (
               <BiSolidSun
                 onClick={() => setTheme("light")}
@@ -84,7 +93,7 @@ const Navbar = ({ theme, setTheme }) => {
             {showMenu ? (
               <HiMenuAlt1
                 onClick={toggleMenu}
-                className=" cursor-pointer transition-all"
+                className="cursor-pointer transition-all"
                 size={30}
               />
             ) : (
