@@ -7,22 +7,22 @@ export const Navlinks = [
   {
     id: 1,
     name: "HOME",
-    link: "/#",
+    link: "",
   },
   {
     id: 2,
     name: "LAPTOPS",
-    link: "/#laptops",
+    link: "",
   },
   {
     id: 3,
     name: "ABOUT",
-    link: "/#about",
+    link: "",
   },
   {
     id: 4,
     name: "SHOP",
-    link: "/#laptops",
+    link: "",
   },
 ];
 const Navbar = ({ theme, setTheme }) => {
@@ -46,8 +46,7 @@ const Navbar = ({ theme, setTheme }) => {
               {Navlinks.map(({ id, name, link }) => (
                 <li key={id} className="py-4">
                   <a
-                    href={link}
-                    className=" text-lg font-medium  hover:text-primary py-2 hover:border-b-2 hover:border-primary transition-colors duration-500  "
+                    className=" text-lg font-medium  hover:text-primary py-2 hover:border-b-2 hover:border-primary transition-colors duration-500 cursor-pointer"
                   >
                     {name}
                   </a>
