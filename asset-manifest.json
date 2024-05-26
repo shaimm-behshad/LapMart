@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/LapMart/static/css/main.a12bce10.css",
+    "main.js": "/LapMart/static/js/main.37013381.js",
+    "static/media/sasha.jpg": "/LapMart/static/media/sasha.4e873963042bf3e0abbb.jpg",
+    "static/media/tony.jpg": "/LapMart/static/media/tony.9a23d476c73fd71cfd48.jpg",
+    "static/media/banner-laptop.png": "/LapMart/static/media/banner-laptop.aee4994742ac703fce44.png",
+    "static/media/katrin.jpg": "/LapMart/static/media/katrin.ff60eecfc3c1d2f7bdb0.jpg",
+    "static/media/hp.png": "/LapMart/static/media/hp.13ecd196ee9e3f4de1e5.png",
+    "static/media/3laptops.png": "/LapMart/static/media/3laptops.ab184724532cf2f327ea.png",
+    "static/media/macbook.png": "/LapMart/static/media/macbook.41bba40cbf39577739ce.png",
+    "static/media/b-laptop.png": "/LapMart/static/media/b-laptop.597c1d0fa29c852e2f52.png",
+    "static/media/asus.png": "/LapMart/static/media/asus.a7f32d77cc2fbc055458.png",
+    "static/media/pattern.jpeg": "/LapMart/static/media/pattern.14a506486752ad834eab.jpeg",
+    "static/media/appstore.png": "/LapMart/static/media/appstore.8a5164ca9f62a2d5c172.png",
+    "static/media/playstore.png": "/LapMart/static/media/playstore.1be3feade6ae12c67801.png",
+    "index.html": "/LapMart/index.html",
+    "main.a12bce10.css.map": "/LapMart/static/css/main.a12bce10.css.map",
+    "main.37013381.js.map": "/LapMart/static/js/main.37013381.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a12bce10.css",
+    "static/js/main.37013381.js"
+  ]
+}
