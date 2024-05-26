@@ -1,9 +1,15 @@
 import React from "react";
 import { FaUserCircle } from "react-icons/fa";
-
 import { Navlinks } from "./Navbar";
 
 const ResponsiveMenu = ({ showMenu }) => {
+  const handleScroll = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div
       className={`${
@@ -22,9 +28,12 @@ const ResponsiveMenu = ({ showMenu }) => {
           <ul className="space-y-4 text-xl">
             {Navlinks.map((data) => (
               <li key={data.id}>
-                <a href={data.link} className="mb-5 inline-block" >
+                <span
+                  onClick={() => handleScroll(data.link)}
+                  className="mb-5 inline-block cursor-pointer"
+                >
                   {data.name}
-                </a>
+                </span>
               </li>
             ))}
           </ul>
